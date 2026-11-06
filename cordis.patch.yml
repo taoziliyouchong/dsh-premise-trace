@@ -1,0 +1,4 @@
+# dsh-premise-trace：一个插件行，注册一个内置技能 premise-trace（方法正文在 assets/premise-trace.md）。
+- insert:
+    - id: dsh-premise-trace
+      name: dsh-premise-trace

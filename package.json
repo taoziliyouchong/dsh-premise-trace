@@ -1,0 +1,55 @@
+{
+  "name": "dsh-premise-trace",
+  "version": "0.1.0",
+  "description": "判断一个主体为什么从状态 A 转到状态 B、下一步转到哪，或解释单个状态靠哪几项成立条件同时成立：成立条件变强／变弱／被替换／失效后哪项是关键成立条件。注册一个模型可调用的内置技能。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./invariant": "./invariant.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "invariant.js",
+    "cordis.patch.yml",
+    "assets",
+    "scripts",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-0 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "reasoning",
+    "analysis",
+    "conditions",
+    "causal-analysis"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check invariant.js",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "author": "taoziliyouchong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoziliyouchong/dsh-premise-trace"
+  },
+  "homepage": "https://github.com/taoziliyouchong/dsh-premise-trace#readme",
+  "bugs": {
+    "url": "https://github.com/taoziliyouchong/dsh-premise-trace/issues"
+  }
+}
