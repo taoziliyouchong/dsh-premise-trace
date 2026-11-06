@@ -2,5 +2,5 @@ url: https://github.com/taoziliyouchong/dsh-premise-trace
 name: taoziliyouchong/dsh-premise-trace
 category: skill
 description:
-  en: Traces why a subject moved from state A to state B, or what a single state rests on — which conditions must hold together, which one is critical when it fails with no fallback, and which two or three next states the condition movements lead to.
-  zh: 判断一个主体为什么从状态 A 转到状态 B，或解释单个状态靠哪几项成立条件同时成立——成立条件变强／变弱／被替换／失效后哪项是关键成立条件，以及条件异动会走到哪两三个可能。
+  en: Looks back at how something became what it is, explains what it currently rests on, and works out what it will become next.
+  zh: 回望一件事怎么变成现在这样，说清它现在靠什么成立，判断它下一步会变成什么。

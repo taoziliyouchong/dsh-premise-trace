@@ -26,6 +26,7 @@ npm pack --dry-run
 ## 1. 建 GitHub 仓库
 
 - 公开仓库与包名同名：`dsh-premise-trace`，安装命令写 `github:taoziliyouchong/dsh-premise-trace`。
+- 仓库页 About 的 Description 填：`回望一件事怎么变成现在这样，说清它现在靠什么成立，判断它下一步会变成什么。`
 - 推送本目录内容（`git init` 已做过，首次只需 `git push -u origin main`）。
 - 给仓库加 topic：`dsh-plugin`（收录检查会看）。
 - 仓库创建要满 1 天才能进目录（自动检查），当天建好、第二天再提 PR。
