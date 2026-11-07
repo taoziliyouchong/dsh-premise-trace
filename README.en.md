@@ -41,7 +41,7 @@ This package registers no tools, commands, routes or UI — the only difference 
 
 ## Compatibility
 
-`engines.dsh` declares `>=0.2.2-0 <0.2.3-0` (verified on 0.2.2-rc.1); later versions are untested.
+`engines.dsh` declares `>=0.2.1-0 <=0.2.2-rc.1` (verified on 0.2.1-alpha.3 through 0.2.2-rc.1); later versions are untested.
 
 ## Maintenance
 
@@ -51,6 +51,11 @@ npm run smoke    # structure / bundle declaration / registration / skill body
 ```
 
 Edit `assets/premise-trace.md` for the method, `index.js` for registration; restart DSH to apply.
+
+## Feedback
+
+- Open an issue: https://github.com/taoziliyouchong/dsh-premise-trace/issues
+- Or reach me on QQ: **2171960697** (mention which plugin you installed when adding the contact).
 
 ## License
 

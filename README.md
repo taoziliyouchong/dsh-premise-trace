@@ -49,7 +49,7 @@ dsh plugin --profile <profile> add github:taoziliyouchong/dsh-premise-trace
 
 ## 兼容
 
-`engines.dsh` 声明 `>=0.2.2-0 <0.2.3-0`（验证版本 0.2.2-rc.1）；更高版本未验证。
+`engines.dsh` 声明 `>=0.2.1-0 <=0.2.2-rc.1`（0.2.1-alpha.3 ～ 0.2.2-rc.1 实际运行验证）；更高版本未验证。
 
 ## 维护
 
@@ -59,6 +59,13 @@ npm run smoke    # 结构 / 组合声明 / 注册 / 正文可读
 ```
 
 改方法正文只动 `assets/premise-trace.md`，改注册动 `index.js`；改完重启 DSH 生效。
+
+## 反馈
+
+1. 开 Issue：https://github.com/taoziliyouchong/dsh-premise-trace/issues —— 能留痕、能搜历史；
+2. 急着问或不想开 Issue，QQ 号：**2171960697**（加好友请注明装的是哪个插件）。
+
+反馈时带上：DSH 版本、插件版本、报错原文、截图。
 
 ## License
 
