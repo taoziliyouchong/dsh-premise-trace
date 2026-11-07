@@ -21,7 +21,7 @@ npm pack --dry-run   # 看包里到底装了什么
 npm pack --dry-run
 ```
 
-包里只应出现：`index.js`、`invariant.js`、`cordis.patch.yml`、`assets/`、`scripts/`、两个 README、`LICENSE`。`node_modules/`、`publish/`、`*.tgz` 都不该进包。
+包里只应出现：`index.js`、`cordis.patch.yml`、`assets/`、`scripts/`、两个 README、`LICENSE`。`node_modules/`、`publish/`、`*.tgz` 都不该进包。
 
 ## 1. 建 GitHub 仓库
 

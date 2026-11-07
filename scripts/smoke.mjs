@@ -8,7 +8,6 @@
  *   3. 注册        —— 桩 ctx 跑 apply：导出名等于包名，注册 1 个技能 provider、1 个技能
  *   4. 正文可读    —— provider.get() 能读出 assets 里的方法正文，长度与关键小节齐
  *   5. 零外部依赖  —— 运行时只引 node: 内置模块，不引宿主内部包
- *   6. 伴随插件    —— invariant.js 导出名与登记名符合约定
  *
  * 用法：node scripts/smoke.mjs   （任一条失败退出码 1）
  */
@@ -30,7 +29,6 @@ const fail = (label, why) => {
 /** 1. 包结构 */
 const REQUIRED = [
   'index.js',
-  'invariant.js',
   'cordis.patch.yml',
   'assets/premise-trace.md',
   'README.md',
@@ -105,7 +103,7 @@ if (providers.length === 1) {
 }
 
 /** 5. 零外部依赖：运行时只引 node: 内置模块 */
-for (const rel of ['index.js', 'invariant.js']) {
+for (const rel of ['index.js']) {
   const source = readFileSync(join(root, rel), 'utf8')
   const imports = [...source.matchAll(/from\s+'([^']+)'/g)].map((m) => m[1])
   const external = imports.filter((spec) => !spec.startsWith('node:'))
@@ -115,18 +113,6 @@ if (pkg.dependencies && Object.keys(pkg.dependencies).length > 0) {
   fail('依赖', 'package.json 声明了 dependencies，本包应为零依赖：' + Object.keys(pkg.dependencies).join('、'))
 }
 if (!problems.some((p) => p.startsWith('依赖'))) ok('依赖', '运行时只用 node: 内置模块')
-
-/** 6. 伴随插件 */
-const companion = await import(pathToFileURL(join(root, 'invariant.js')).href)
-if (companion.name !== pkg.name + '-invariant') fail('伴随插件', '导出的 name 是 ' + companion.name + '，应为 ' + pkg.name + '-invariant')
-else if (!Array.isArray(companion.inject) || !companion.inject.includes('invariants')) fail('伴随插件', 'inject 里没有 invariants')
-else {
-  const registered = []
-  const invariantCtx = { invariants: { register: (name) => registered.push(name) } }
-  await companion.apply(invariantCtx)
-  if (registered[0] !== pkg.name) fail('伴随插件', '登记的包名是 ' + registered[0] + '，应为 ' + pkg.name)
-  else ok('伴随插件', '登记 ' + pkg.name)
-}
 
 console.log('')
 if (problems.length > 0) {

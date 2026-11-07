@@ -42,7 +42,6 @@ dsh plugin --profile <profile> add github:taoziliyouchong/dsh-premise-trace
 | 文件 | 作用 |
 |---|---|
 | `index.js` | 向技能服务注册 `premise-trace`（bundled，档位 600） |
-| `invariant.js` | 组合用的伴随插件 |
 | `cordis.patch.yml` | 组合声明：`dsh plugin add` 靠这一行把插件接进层栈 |
 | `assets/premise-trace.md` | 方法正文（技能加载时读取全文） |
 | `scripts/smoke.mjs` | 本机冒烟：结构、组合声明、注册、正文可读 |

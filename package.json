@@ -1,17 +1,15 @@
 {
   "name": "dsh-premise-trace",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "回望一件事怎么变成现在这样，说清它现在靠什么成立，判断它下一步会变成什么。",
   "type": "module",
   "main": "index.js",
   "exports": {
     ".": "./index.js",
-    "./invariant": "./invariant.js",
     "./package.json": "./package.json"
   },
   "files": [
     "index.js",
-    "invariant.js",
     "cordis.patch.yml",
     "assets",
     "scripts",
@@ -39,7 +37,7 @@
     "causal-analysis"
   ],
   "scripts": {
-    "check": "node --check index.js && node --check invariant.js",
+    "check": "node --check index.js",
     "smoke": "node scripts/smoke.mjs"
   },
   "author": "taoziliyouchong",
