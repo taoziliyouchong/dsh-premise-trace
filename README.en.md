@@ -41,7 +41,7 @@ This package registers no tools, commands, routes or UI — the only difference 
 
 ## Compatibility
 
-`engines.dsh` declares `>=0.2.1-0 <0.3.0-0`; not guaranteed beyond 0.3.
+`engines.dsh` declares `>=0.2.2-0 <0.2.3-0` (verified on 0.2.2-rc.1); later versions are untested.
 
 ## Maintenance
 

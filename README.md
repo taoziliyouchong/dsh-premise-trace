@@ -49,7 +49,7 @@ dsh plugin --profile <profile> add github:taoziliyouchong/dsh-premise-trace
 
 ## 兼容
 
-`engines.dsh` 声明 `>=0.2.1-0 <0.3.0-0`；0.3 起不保证。
+`engines.dsh` 声明 `>=0.2.2-0 <0.2.3-0`（验证版本 0.2.2-rc.1）；更高版本未验证。
 
 ## 维护
 
