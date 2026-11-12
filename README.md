@@ -48,7 +48,7 @@ dsh plugin --profile <profile> add github:taoziliyouchong/dsh-premise-trace
 
 ## 兼容
 
-`engines.dsh` 声明 `>=0.2.1-0`（0.2.1-alpha.3、0.2.2-rc.1 实际运行验证）；更高版本未验证。
+要求 DSH >= 0.2.1-alpha.1（本包只注册技能，用宿主 skills 服务；实测 0.2.1-alpha.3、0.2.2-rc.1）。
 
 ## 维护
 

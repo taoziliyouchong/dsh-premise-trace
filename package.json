@@ -1,6 +1,6 @@
 {
   "name": "dsh-premise-trace",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "回望一件事怎么变成现在这样，说清它现在靠什么成立，判断它下一步会变成什么。",
   "type": "module",
   "main": "index.js",
@@ -19,7 +19,7 @@
   ],
   "engines": {
     "node": "^22.19.0 || >=24.0.0",
-    "dsh": ">=0.2.1-0"
+    "dsh": ">=0.2.1-alpha.1"
   },
   "dsh": {
     "bundle": {

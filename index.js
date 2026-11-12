@@ -5,6 +5,7 @@
  */
 
 import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 
 /**
  * 技能排序档位：与宿主内置 bundled 技能同档。
@@ -40,7 +41,7 @@ export function apply(ctx) {
           invocation: { modelInvocable: true, userInvocable: true },
           provider: 'dsh-premise-trace',
           source: 'bundled',
-          resourceBase: { kind: 'directory', path: new URL('./assets/', import.meta.url).pathname },
+          resourceBase: { kind: 'directory', path: fileURLToPath(new URL('./assets/', import.meta.url)) },
           rank: SKILL_RANK,
           locator: new URL(`./assets/${s.file}`, import.meta.url),
         })),

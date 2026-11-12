@@ -41,7 +41,7 @@ This package registers no tools, commands, routes or UI — the only difference 
 
 ## Compatibility
 
-`engines.dsh` declares `>=0.2.1-0` (verified on 0.2.1-alpha.3 and 0.2.2-rc.1); later versions are untested.
+Does not declare `engines.dsh` (this package only registers a skill and uses no tools, slots, or services); verified on 0.2.1-alpha.3 and 0.2.2-rc.1.
 
 ## Maintenance
 

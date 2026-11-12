@@ -75,5 +75,4 @@ npm publish --access public
 
 ## 已知注意事项
 
-- 与私有版 `zzuser-premise-trace` 的技能名不同（`premise-trace` vs `zzuser-premise-trace-workflow`），两个同时装不会撞名；但同一套方法装两份没有意义，留一份即可。
 - 档位 600 与宿主内置 bundled 技能同档，技能目录里按名字排列，不抢位。
