@@ -1,6 +1,12 @@
 # dsh-premise-trace — premise tracing
 
-A bundled skill for DSH: work out why a subject moved from state A to state B, what it moves to next, or — for a single state — which conditions must hold together.
+A premise-analysis skill for DSH: split a thing into the conditions that hold it up, and answer where it came from, what keeps it standing, and which condition change would carry it where.
+
+## What you get
+
+- **One table of holding conditions** — each screened for "does the state survive without it" and "is there a second path back", with the critical ones marked.
+- **One line on the current state** — what is shifting now and where it points.
+- **For forecasts, two or three possible next states** — B most likely, plus C and D, each with the condition change that leads to it.
 
 ## Questions it answers
 

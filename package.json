@@ -1,7 +1,7 @@
 {
   "name": "dsh-premise-trace",
-  "version": "0.1.4",
-  "description": "回望一件事怎么变成现在这样，说清它现在靠什么成立，判断它下一步会变成什么。",
+  "version": "0.1.5",
+  "description": "前提分析法：拆开一件事的成立条件，回答它为什么变成现在这样、现在靠什么撑着、哪条一变会走到哪——交付一张逐条标好的条件表。",
   "type": "module",
   "main": "index.js",
   "exports": {
