@@ -1,6 +1,6 @@
 # dsh-premise-trace — premise tracing
 
-A premise-analysis skill for DSH: split a thing into the conditions that hold it up, and answer where it came from, what keeps it standing, and which condition change would carry it where.
+Premise tracing: split a thing into the conditions that hold it up, and answer why it became what it is, what keeps it standing, and what it becomes next — delivered as a table of conditions.
 
 ## What you get
 

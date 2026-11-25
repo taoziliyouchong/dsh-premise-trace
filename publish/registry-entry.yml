@@ -2,5 +2,5 @@ url: https://github.com/taoziliyouchong/dsh-premise-trace
 name: taoziliyouchong/dsh-premise-trace
 category: skill
 description:
-  en: Looks back at how something became what it is, explains what it currently rests on, and works out what it will become next.
-  zh: 回望一件事怎么变成现在这样，说清它现在靠什么成立，判断它下一步会变成什么。
+  en: Premise tracing: split a thing into the conditions that hold it up, and answer why it became what it is, what keeps it standing, and what it becomes next — delivered as a table of conditions.
+  zh: 前提追溯：拆开一件事的成立条件，回答它为什么变成现在这样、靠什么撑着、下一步会变成什么——交付一张逐条标好的条件表。
